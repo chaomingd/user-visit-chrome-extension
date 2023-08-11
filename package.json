@@ -1,0 +1,27 @@
+{
+  "name": "hello-chrome-extension",
+  "version": "1.0.0",
+  "description": "",
+  "main": "UserVisite.js",
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack",
+    "start": "cross-env NODE_ENV=development webpack --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chrome": "^0.0.243",
+    "@types/react": "^18.2.20",
+    "copy-webpack-plugin": "^11.0.0",
+    "cross-env": "^7.0.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.1.6"
+  }
+}

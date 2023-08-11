@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "Quick API Reference",
+  "description": "Quick API can speed up the building of Chrome extensions.",
+  "version": "1.0.0",
+  "icons": {
+    "16": "images/icon-16.png",
+    "128": "images/icon-128.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "minimum_chrome_version": "102",
+  "omnibox": {
+    "keyword": "api"
+  },
+  "permissions": ["alarms", "storage", "tabs"],
+  "content_scripts": [
+    {
+      "matches": ["https://*/*", "http://*/*"],
+      "js": ["content.js"]
+    }
+  ]
+}

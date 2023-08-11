@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "noImplicitAny": true,
+    "sourceMap": true,
+    "module": "ESNext",
+    "target": "es5",
+    "jsx": "react-jsx",
+    "lib": ["es2017", "DOM"],
+    "allowJs": true,
+    "moduleResolution": "node"
+  }
+}
